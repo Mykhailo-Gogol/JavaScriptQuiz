@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>You Don't Know MATH</title>
+  </head>
+  <body>
+    <section class="wrapper">
+      <h1 class="heading">
+        You Don't Know <span class="heading--yellow">Math</span>
+      </h1>
+
+      <div class="question">
+        <h2 class="question__heading">0.1 + 0.2</h2>
+        <label class="question__label" for="answer-1">
+          <input type="radio" name="answer-1" id="answer-1" value="false" />
+          0.30000000000000002
+        </label>
+
+        <label class="question__label" for="answer-1">
+          <input type="radio" name="answer-1" id="answer-1" value="false" />
+          0.30000000000000003
+        </label>
+
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer-1" id="answer-1" value="true" />
+          0.30000000000000004
+        </label>
+      </div>
+      <div class="question">
+        <h2 class="question__heading">[1,2,3] == [1,2,3];</h2>
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-2" value="false" />
+          true
+        </label>
+
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-2" value="true" />
+          false
+        </label>
+
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-2" value="false" />
+          equal
+        </label>
+      </div>
+      <div class="question">
+        <h2 class="question__heading">'foo' == 'foo'</h2>
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-3" value="true" />
+          true
+        </label>
+
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-3" value="false" />
+          false
+        </label>
+
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-3" value="false" />
+          type Error
+        </label>
+      </div>
+      <div class="question">
+        <h2 class="question__heading">new Array(3) == ",,";</h2>
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-4" value="false" />
+          no
+        </label>
+
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-4" value="false" />
+          false
+        </label>
+
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-4" value="true" />
+          true
+        </label>
+      </div>
+      <div class="question">
+        <h2 class="question__heading">Math.max() > Math.min()</h2>
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-5" value="false" />
+          I don't know
+        </label>
+
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-5" value="false" />
+          true
+        </label>
+
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-5" value="true" />
+          false
+        </label>
+      </div>
+
+      <button class="btn-submit" type="submit" id="js-submit">Submit</button>
+      <button class="btn-submit--clear" type="button" id="js-clear">
+        Clear
+      </button>
+    </section>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
