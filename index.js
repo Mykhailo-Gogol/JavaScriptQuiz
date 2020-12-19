@@ -110,16 +110,27 @@ function onSubmiting() {
   console.clear();
   console.log(total);
 
-  if (total === 5) {
-    alert(`You have ${total}/5, You have passed the exam!`);
+  if (total === 10) {
+    alert(`You have ${total}/10, You have passed the exam!`);
     document.body.style.background = "forestgreen";
   } else {
-    alert(`You have ${total}/5, try again later...`);
+    alert(`You have ${total}/10, try again later...`);
+    document.body.style.background = "tomato";
   }
 }
 clearButtonRef.addEventListener("click", onClearButtonClick);
 
-function onClearButtonClick() {}
+function onClearButtonClick() {
+  document.body.style.background = "black";
+
+  const radioButtonRef = document.querySelectorAll('[type="radio"]');
+  console.log(radioButtonRef);
+  radioButtonRef.forEach((e) => {
+    e.checked = false;
+    e.disabled = false;
+    e.parentNode.style.backgroundColor = "inherit";
+  });
+}
 
 // Killers
 // function findKiller(peoples, dead) {}

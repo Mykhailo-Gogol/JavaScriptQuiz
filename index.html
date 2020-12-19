@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>You Don't Know MATH</title>
+    <title>Mini test 1.0</title>
   </head>
   <body>
-    <section class="wrapper">
+    <section class="wrapper" id="home">
       <h1 class="heading">
-        You Don't Know <span class="heading--yellow">Math</span>
+        Mini test <span class="heading--yellow">1.0</span>
       </h1>
 
       <div class="question">
@@ -97,11 +97,98 @@
           false
         </label>
       </div>
+      <div class="question">
+        <h2 class="question__heading">!!'false' === !!'true'</h2>
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-6" value="false" />
+          I don't know
+        </label>
+
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-6" value="true" />
+          true
+        </label>
+
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-6" value="false" />
+          false
+        </label>
+      </div>
+      <div class="question">
+        <h2 class="question__heading">[] === ![]</h2>
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-7" value="false" />
+          I don't know
+        </label>
+
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-7" value="false" />
+          true
+        </label>
+
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-7" value="true" />
+          false
+        </label>
+      </div>
+      <div class="question">
+        <h2 class="question__heading">NaN === NaN</h2>
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-8" value="false" />
+          I don't know
+        </label>
+
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-8" value="true" />
+          false
+        </label>
+
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-8" value="false" />
+          true
+        </label>
+      </div>
+      <div class="question">
+        <h2 class="question__heading">typeof [1, 2, 3]</h2>
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-9" value="false" />
+          I don't know
+        </label>
+
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-9" value="true" />
+          'object'
+        </label>
+
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-9" value="false" />
+          'undefined'
+        </label>
+      </div>
+      <div class="question">
+        <h2 class="question__heading">3 > 2 > 1</h2>
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-10" value="false" />
+          I don't know
+        </label>
+
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-10" value="false" />
+          true
+        </label>
+
+        <label class="question__label" for="answer">
+          <input type="radio" name="answer" id="answer-10" value="true" />
+          false
+        </label>
+      </div>
 
       <button class="btn-submit" type="submit" id="js-submit">Submit</button>
-      <button class="btn-submit--clear" type="button" id="js-clear">
-        Clear
-      </button>
+      <a href="#home"
+        ><button class="btn-submit--clear" type="button" id="js-clear">
+          Clear
+        </button></a
+      >
     </section>
     <script src="./index.js" type="module"></script>
   </body>
